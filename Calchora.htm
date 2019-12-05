@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horas</title>
+    <script type="text/javascript">
+         
+        var hra=+prompt("ingrese la hora");
+        var min=+prompt("ingrese los min");
+        var seg=+prompt("ingrese la segundos");
+        alert(+hra+":"+min+":"+seg);
+        
+        var hra2=+prompt("ingrese la hora");
+        var min2=+prompt("ingrese los min");
+        var seg2=+prompt("ingrese la segundos");
+        alert(+hra2+":"+min2+":"+seg2);
+        var aux=(hra*3600)+(min*60)+seg;
+        var aux2=(hra2*3600)+(min2*60)+seg2;
+        alert(aux2);
+        
+        if (aux<aux2) {
+            
+            var dife=aux2-aux;
+            var d=dife/3600;
+            var h=Math.trunc(d); //se toma la parte entera horas
+            var mi=d-h;
+            mi=mi*60;
+            var m=Math.trunc(mi);
+            var se=mi-m;
+            se=se*60;
+            alert (h+":"+m+":"+se);
+        }
+        else{
+            
+            var dife=aux-aux2;
+            var d=dife/3600;
+            var h=Math.trunc(d); //se toma la parte entera horas
+            var mi=d-h;
+            mi=mi*60;
+            var m=Math.trunc(mi);
+            var se=mi-m;
+            se=se*60;
+            alert (h+":"+m+":"+se);
+        }
+            
+    
+        
+ 
+              
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>
